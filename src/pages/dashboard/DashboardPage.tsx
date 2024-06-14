@@ -146,8 +146,8 @@ const DashboardPage = () => {
         </div>
 
         {/* graph Chart */}
-        <div className="pt-[10px]">
-          <div className="px-[10px] py-[15px] bg-white rounded-[10px]">
+        <div className="pt-[10px] flex">
+          <div className="px-[10px] py-[15px] bg-white rounded-[10px] shrink-0 w-1/2">
             <p className="font-[500] text-sm text-adminTitle-200">
               Remittance Analytics
             </p>

@@ -23,11 +23,9 @@ const RemittanceChart = () => {
         horizontal: false,
         columnWidth: "55%",
         endingShape: "rounded",
-        colors: {
-          backgroundBarColors: ["#5A5278", "#6F6593"],
-        },
       },
     },
+    colors: ["#5A5278", "#6F6593"],
     dataLabels: {
       enabled: false,
     },
@@ -67,7 +65,7 @@ const RemittanceChart = () => {
   });
 
   return (
-    <div className="w-1/2">
+    <div className="w-full">
       <div id="chart">
         <ReactApexChart
           options={options}
