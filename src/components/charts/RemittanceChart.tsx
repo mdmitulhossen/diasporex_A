@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 const RemittanceChart = () => {
-  const [series] = useState([
+  const [series] = useState<{ name: string; data: number[] }[]>([
     {
       name: "Pending",
       data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
@@ -13,7 +13,7 @@ const RemittanceChart = () => {
     },
   ]);
 
-  const [options] = useState({
+  const [options] = useState<ApexCharts.ApexOptions>({
     chart: {
       type: "bar",
       height: 300,
@@ -22,7 +22,6 @@ const RemittanceChart = () => {
       bar: {
         horizontal: false,
         columnWidth: "55%",
-        endingShape: "rounded",
       },
     },
     colors: ["#5A5278", "#6F6593"],
@@ -57,7 +56,7 @@ const RemittanceChart = () => {
     },
     tooltip: {
       y: {
-        formatter: function (val) {
+        formatter: function (val: number) {
           return "$ " + val + " thousands";
         },
       },
