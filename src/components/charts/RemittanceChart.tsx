@@ -65,7 +65,7 @@ const RemittanceChart = () => {
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <div id="chart">
         <ReactApexChart
           options={options}

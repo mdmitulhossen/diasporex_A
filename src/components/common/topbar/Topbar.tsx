@@ -25,7 +25,7 @@ const Topbar = ({ children }: { children: string }) => {
           </button>
           <div>
             <h1 className="font-[500] text-white">{children}</h1>
-            <p className="font-[500] text-white text-[10px] hidden">
+            <p className="font-[500] text-white text-[10px] hidden md:block">
               Welcome To DiasporeX Admin Panel
             </p>
           </div>
